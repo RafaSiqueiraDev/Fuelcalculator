@@ -3,33 +3,52 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/Green"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-
-
-
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:text="Calculadora de gasto de combustível"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Não tem ideia de quanto vai gastar de combustível na sua viagem? Então vamos
+te ajudar! "
+         />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/gold"
         android:text="Iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="159dp"
 
         />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculadora de Combustível"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="342dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
