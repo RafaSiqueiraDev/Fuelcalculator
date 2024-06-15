@@ -1,4 +1,4 @@
-# Calculadora IMC
+# Fuel Calculator
 Esse projeto é um aplicativo nativo que foi densenvolvido com a linguagem KOTLIN, como objetivo principal realizar o calculo de gasto de combustível atráves das informações repassadas pelos usuarios
 
 ## :camera_flash: Screenshots
