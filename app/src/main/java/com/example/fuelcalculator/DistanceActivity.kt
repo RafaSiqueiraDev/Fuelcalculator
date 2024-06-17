@@ -9,22 +9,22 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
 
-class ConsumptionActivity : AppCompatActivity() {
+class DistanceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_consumption)
+        setContentView(R.layout.activity_distance)
 
-        val edt_consumo = findViewById<TextInputEditText>(R.id.edt_consumo)
 
-        val btn_consumo = findViewById<Button>(R.id.btn_consumo)
+            val edt_distancia = findViewById<TextInputEditText>(R.id.edt_distancia)
 
-        // criar uma nova tela e  ajustar intent abaixo
+            val btn_distancia = findViewById<Button>(R.id.btn_distancia)
 
-        btn_consumo.setOnClickListener{
-            val intent = Intent(this, DistanceActivity::class.java)
-            startActivity(intent)
+            // criar uma nova tela e  ajustar intent abaixo
 
+            btn_distancia.setOnClickListener{
+                val intent = Intent(this, ResultActivity::class.java)
+                startActivity(intent)
         }
     }
 }

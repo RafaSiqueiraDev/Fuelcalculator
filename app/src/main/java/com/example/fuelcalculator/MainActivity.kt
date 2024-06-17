@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val btn_calcular = findViewById<Button>(R.id.btn_iniciar)
+        val btn_iniciar = findViewById<Button>(R.id.btn_iniciar)
 
 
-        btn_calcular.setOnClickListener {
+        btn_iniciar.setOnClickListener {
 
             val intent = Intent(this, PriceActivity::class.java)
             startActivity(intent)

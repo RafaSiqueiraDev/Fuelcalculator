@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@color/blue"
     android:layout_height="match_parent"
-    tools:context=".ConsumptionActivity">
+    android:background="@color/blue"
+    tools:context=".DistanceActivity">
 
     <Button
-        android:id="@+id/btn_consumo"
+        android:id="@+id/btn_distancia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:backgroundTint="@color/gold"
-        android:text="Próximo"
+        android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="159dp"
 
@@ -31,10 +31,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_consumo"
+            android:id="@+id/edt_distancia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="EX: 5km/l"
+            android:hint="EX: 180 km"
             android:inputType="numberDecimal"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -43,7 +43,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="consumo"
+        android:text="Distancia"
         android:textColor="@color/white"
         android:textSize="30dp"
         android:gravity="center"
