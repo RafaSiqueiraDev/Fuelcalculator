@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@color/blue"
     android:layout_height="match_parent"
-    tools:context=".ConsumptionActivity">
+    android:background="@color/blue"
+    tools:context=".DistanceActivity">
 
     <Button
         android:id="@+id/btn_distancia"
@@ -14,31 +14,41 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:backgroundTint="@color/gold"
-        android:text="Próximo"
+        android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="159dp"
 
         />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/rounded_edittext"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_distancia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="EX: 180 km"
             android:inputType="numberDecimal"
-            android:hint="EX: 5km/l"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distancia"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:layout_editor_absoluteX="170dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
