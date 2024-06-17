@@ -9,7 +9,7 @@
     tools:context=".ConsumptionActivity">
 
     <Button
-        android:id="@+id/btn_consumo"
+        android:id="@+id/btn_distancia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -31,7 +31,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_consumo"
+            android:id="@+id/edt_distancia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
